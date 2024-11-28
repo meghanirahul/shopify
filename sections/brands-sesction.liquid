@@ -1,0 +1,86 @@
+
+{{ 'slick.css' | asset_url | stylesheet_tag }}
+{{ 'slick-theme.css' | asset_url | stylesheet_tag }}
+{{ 'brands-css.css' | asset_url | stylesheet_tag }}
+<div class="heighgt"> 
+  <div class="page-width-desktop">
+    <div class="dii-ff">
+      {% for block in section.blocks %}
+        <div class="image{{ forloop.index }} image-paa">
+          {{ block.settings.image | image_url: width: master | image_tag }}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{{ 'slick-min.js' | asset_url | script_tag }}
+<script>
+  $('.dii-ff').slick({
+  dots: true,
+  infinite: false,
+  speed: 300,
+  slidesToShow: 6,
+  slidesToScroll: 0,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 5,
+        slidesToScroll: 3,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 4,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 750,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 400,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+  ]
+});
+</script>
+
+{% schema %}
+  {
+    "name": "brands-sesction",
+    "settings": [],
+    "blocks": [{
+      "type": "image",
+      "name": "image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "select image"
+        }
+      ]
+    }],
+    "presets": [{
+      "name": "brands-sesction"
+    }]
+  }
+{% endschema %}

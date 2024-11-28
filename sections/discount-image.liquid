@@ -1,0 +1,108 @@
+<link type="text/css" href="{{ 'discount-image.css' | asset_url }}" rel="stylesheet">
+{% style %}
+  .baner-1{background: url("https:{{ section.settings.image1 | image_url }}")no-repeat right top;background-size:cover;}
+  .baner-2{background: url("https:{{ section.settings.image2 | image_url }}")no-repeat left bottom;background-size:cover;}
+{% endstyle %}
+<div class="contai page-width-desktop padding-sideee">
+<div class="baner-1">
+  <div class="text-box1">
+    <p class="heading1">{{ section.settings.heading1 }}</p>
+    <div class="title1">
+        {{ section.settings.title1 }}
+    </div>
+    {%- if section.settings.button_label != blank -%}
+              <div class="banner__buttons buton_hover margin-arr-0">
+                <div class="buton_effect">
+                <a
+                  {% if section.settings.link %}
+                    href="{{ section.settings.link }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  class="button {% if section.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} buton_colur"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+                </div> 
+              </div>
+    {%- endif -%}
+  </div>
+</div>
+<div class="baner-2">
+  <div class="text-box2">
+    <div class="title2">
+        {{ section.settings.title2 }}
+    </div>
+    <p class="heading2">{{ section.settings.heading2 }}</p>
+     {%- if section.settings.button_label != blank -%}
+              <div class="banner__buttons buton_hover margin-arr-2">
+                <div class="buton_effect dholida">
+                <a
+                  {% if section.settings.link %}
+                    href="{{ section.settings.link }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  class="button {% if section.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} buton_colur secondori"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+                </div> 
+              </div>
+    {%- endif -%}
+  </div>
+</div>
+</div>
+{% schema %}
+  {
+    "name": "discount-image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image1",
+        "label": "select image1"
+      },
+      {
+        "type": "image_picker",
+        "id": "image2",
+        "label": "select image2"
+      },
+      {
+        "type": "text",
+        "id": "heading1",
+        "label": "Heading 1"
+      },
+      {
+        "type": "richtext",
+        "id": "title1",
+        "label": "title 1"
+      },
+      {
+        "type": "text",
+        "id": "heading2",
+        "label": "Heading 2"
+      },
+      {
+        "type": "richtext",
+        "id": "title2",
+        "label": "title 2"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "t:sections.slideshow.blocks.slide.settings.link.label"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Button label",
+        "label": "t:sections.slideshow.blocks.slide.settings.button_label.label"
+      }
+    ],
+    "presets": [
+      {
+        "name": "disocunt-image"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,288 @@
+{{ 'conter-section.css' | asset_url | stylesheet_tag }}
+
+<div class="page-width-desktop">
+<div class="baner">
+  <div class="box-width">
+    <p class="sale">{{ section.settings.sale }}</p>
+    <p class="heading-mini">{{ section.settings.heading1 }}</p>
+    <div class="description">
+        {{ section.settings.title1 }}
+    </div>
+    <p class="dis-no" id="month">{{ section.settings.month }} {{ section.settings.date }} {{ section.settings.year }}</p>
+    <p class="dis-no" id="hours">{{ section.settings.hours }}:</p>      
+    <p class="dis-no" id="minutes">{{ section.settings.minutes }}:</p>
+    <p class="dis-no" id="seconds">{{ section.settings.seconds }}</p>
+    
+    <ul class="box">
+      <li>
+        <p class="sec-timer"></p>
+        <p class="padi">days</p>
+      </li>
+      <li>
+        <p class="sec-timer"></p>
+        <p class="padi">hours</p>
+      </li>
+      <li>
+        <p class="sec-timer"></p>
+        <p class="padi">minutes</p>
+      </li>
+      <li>
+        <p class="sec-timer"></p>
+        <p class="padi">seconds</p>
+      </li>
+    </ul>
+    {%- if section.settings.button_label != blank -%}
+              <div class="banner__buttons buton_hover margin-0">
+                <div class="buton_effect">
+                <a
+                  {% if section.settings.link %}
+                    href="{{ section.settings.link }}"
+                  {% else %}
+                    role="link" aria-disabled="true"
+                  {% endif %}
+                  class="button {% if section.settings.button_style_secondary %}button--secondary{% else %}button--primary{% endif %} buton_colur"
+                >
+                  {{- section.settings.button_label | escape -}}
+                </a>
+                </div> 
+              </div>
+    {%- endif -%}
+  </div>
+  <div class="wideo-widht" onclick="plaayy()">
+    {{ section.settings.video | video_tag: loop:"loop", muted:true, class:"videoo-width", id:"video" }}
+    <img class="okki" src="https://cdn.shopify.com/s/files/1/0862/2515/8420/files/Frame_4145play.png?v=1710316620">
+  </div>
+</div>
+</div>
+
+
+<script>
+  let dat = document.getElementById("month").innerHTML
+  let tiime = document.getElementById("hours").innerHTML
+  let tiime1 = document.getElementById("minutes").innerHTML
+  let tiime2 = document.getElementById("seconds").innerHTML
+  if (tiime.length == 2){
+    let gear = "0";
+     tiime = gear + tiime
+  }
+  if (tiime1.length == 2){
+    let gear = "0";
+     tiime1 = gear + tiime1
+  }
+  if (tiime2.length == 1){
+    let gear = "0";
+     tiime2 = gear + tiime2
+  }
+  tiime = dat + " " + tiime + tiime1 + tiime2
+  let dt = new Date(tiime);
+  let dt1 = dt.getTime();
+  setInterval(function(){
+            let gt = new Date();
+            let gt1 = gt.getTime();           
+            let cp = dt1 - gt1;
+            let month = cp / 30 / 24 / 60 / 60 / 1000;
+            let day = cp / 24 / 60 / 60 / 1000;
+            let day1 = Math.floor(day);
+            let hours = (day - day1) * 24;  
+            let hours1 = Math.floor(hours);
+            let minutes = (hours - hours1) * 60;
+            let minutes1 = Math.floor(minutes);
+            let seconds =  (minutes - minutes1) * 60;
+            let seconds1 = Math.floor(seconds);
+                // console.log(Math.floor(seconds))
+            document.getElementsByClassName("sec-timer")[0].innerHTML = day1;
+            document.getElementsByClassName("sec-timer")[1].innerHTML = hours1;
+            document.getElementsByClassName("sec-timer")[2].innerHTML = minutes1;
+            document.getElementsByClassName("sec-timer")[3].innerHTML = seconds1;
+            },1000)
+  console.log(tiime)
+</script>
+<script>
+   let ffrd = document.getElementsByClassName("okki")[0]
+  function plaayy(){
+    if(video.paused == true){
+      video.play();
+      ffrd.style.opacity = "0"
+    }
+    else{
+      video.pause();
+      ffrd.style.opacity = "1"
+    }
+     console.log(video.paused)
+  }
+</script>
+
+
+{% schema %}
+  {
+    "name": "Counter Section",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "A Shopify-hosted video"
+      },
+      {
+        "type": "video_url",
+        "id": "product_description_video",
+        "label": "Product description video",
+        "accept": [
+          "youtube",
+          "vimeo"
+        ]
+      },
+      {
+        "type": "select",
+        "id": "videoselect",
+        "label": "selct gallary video or youtube",
+        "options": [
+          {
+            "value": "1",
+            "label": "gallary video"
+          },
+          {
+            "value": "2",
+            "label": "youtube or vimeo video"
+          }
+        ],
+        "default": "1"
+      },
+      {
+        "type": "text",
+        "id": "sale",
+        "label": "sale Heading"
+      },
+       {
+        "type": "text",
+        "id": "heading1",
+        "label": "Heading 1"
+      },
+      {
+        "type": "richtext",
+        "id": "title1",
+        "label": "title 1"
+      },
+      {
+        "type": "url",
+        "id": "link",
+        "label": "link"
+      },
+      {
+        "type": "text",
+        "id": "button_label",
+        "default": "Button label",
+        "label": "Button label"
+      },
+      {
+        "type": "range",
+        "id": "hours",
+        "min": 0,
+        "max": 23,
+        "step": 1,
+        "unit": "hr",
+        "label": "Hours",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "minutes",
+        "min": 0,
+        "max": 59,
+        "step": 1,
+        "unit": "min",
+        "label": "Minutes",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "seconds",
+        "min": 0,
+        "max": 59,
+        "step": 1,
+        "unit": "sec",
+        "label": "Seconds",
+        "default": 0
+      },
+      {
+        "type": "range",
+        "id": "date",
+        "min": 1,
+        "max": 31,
+        "step": 1,
+        "label": "Date",
+        "default": 1
+      },
+      {
+        "type": "select",
+        "id": "month",
+        "label": "Month",
+        "options": [
+          {
+            "value": "1",
+            "label": "January"
+          },
+          {
+            "value": "2",
+            "label": "February"
+          },
+          {
+            "value": "3",
+            "label": "March"
+          },
+          {
+            "value": "4",
+            "label": "April"
+          },
+          {
+            "value": "5",
+            "label": "May"
+          },
+          {
+            "value": "6",
+            "label": "June"
+          },
+          {
+            "value": "7",
+            "label": "July"
+          },
+          {
+            "value": "8",
+            "label": "August"
+          },
+          {
+            "value": "9",
+            "label": "September"
+          },
+          {
+            "value": "10",
+            "label": "October"
+          },
+          {
+            "value": "11",
+            "label": "November"
+          },
+          {
+            "value": "12",
+            "label": "December"
+          }
+        ],
+        "default": "1"
+      },
+      {
+        "type": "range",
+        "id": "year",
+        "min": 2024,
+        "max": 2050,
+        "step": 1,
+        "unit": "yr",
+        "label": "Year",
+        "default": 2024
+      }
+    ],
+    "presets": [
+      {
+        "name": "Counter Section"
+      }
+    ]
+  }
+{% endschema %}

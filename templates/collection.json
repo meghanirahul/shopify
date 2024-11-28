@@ -1,0 +1,87 @@
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "color_scheme": "scheme-1"
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 12,
+        "columns_desktop": 3,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "vertical",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "brands_sesction_WyBezb": {
+      "type": "brands-sesction",
+      "blocks": {
+        "image_9nfhLV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand1.png"
+          }
+        },
+        "image_EP8FKp": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand2.png"
+          }
+        },
+        "image_7NWYXQ": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand3.png"
+          }
+        },
+        "image_wQdhyi": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand4.png"
+          }
+        },
+        "image_TJdAjN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwing_2brand5.png"
+          }
+        },
+        "image_RE7fpt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand6.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_9nfhLV",
+        "image_EP8FKp",
+        "image_7NWYXQ",
+        "image_wQdhyi",
+        "image_TJdAjN",
+        "image_RE7fpt"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "banner",
+    "product-grid",
+    "brands_sesction_WyBezb"
+  ]
+}

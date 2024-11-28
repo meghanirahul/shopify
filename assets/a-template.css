@@ -1,0 +1,9 @@
+.buton_effect a{font-weight:600;}
+
+
+
+@media screen and (max-width:749px){
+  .description p{font-size:14px;}
+  .multicolumn-card__info p{font-size:14px;}
+  .description{font-size:14px;}
+}

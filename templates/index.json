@@ -1,0 +1,395 @@
+{
+  "sections": {
+    "slideshow_duplicate_yUwWfU": {
+      "type": "slideshow-duplicate",
+      "blocks": {
+        "slide_wEKTD9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Frame_4151_2blankimg1.png",
+            "heading": "Make people love  with your stylish cloths",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": false,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_QMLKna": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4284_1blankimg2.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        },
+        "slide_QmThmR": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4285_1blankimg3.png",
+            "heading": "",
+            "heading_size": "h1",
+            "subheading": "",
+            "button_label": "",
+            "link": "",
+            "button_style_secondary": false,
+            "box_align": "middle-center",
+            "show_text_box": true,
+            "text_alignment": "center",
+            "image_overlay_opacity": 0,
+            "color_scheme": "scheme-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "slide_wEKTD9",
+        "slide_QMLKna",
+        "slide_QmThmR"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "adapt_image",
+        "slider_visual": "dots",
+        "auto_rotate": true,
+        "change_slides_speed": 5,
+        "image_behavior": "none",
+        "show_text_below": false,
+        "accessibility_info": "",
+        "title": "<p>DISCOVER THE COLLEction<\/p>",
+        "heading": "<p>Color your days and make your story<\/p>",
+        "description": "<p>Step into the spotlight with our captivating collection of trend-setting fashion pieces. From statement prints to timeless classics.<\/p>",
+        "button_label": "SHOP NOW",
+        "link": "shopify:\/\/collections\/our-brands",
+        "text_review": "Trusted by over 3.2k+ Customers",
+        "stars": "shopify:\/\/shop_images\/stars.png"
+      }
+    },
+    "collection_list_Pi7WGV": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_fmVxt6": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "mens-wear"
+          }
+        },
+        "featured_collection_N9rt3C": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "featured_collection_mca8zm": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "dress"
+          }
+        },
+        "featured_collection_HNXqfh": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "handbags"
+          }
+        },
+        "featured_collection_PPFLmP": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "hoodies"
+          }
+        },
+        "featured_collection_YP7agC": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "co-ords"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_fmVxt6",
+        "featured_collection_N9rt3C",
+        "featured_collection_mca8zm",
+        "featured_collection_HNXqfh",
+        "featured_collection_PPFLmP",
+        "featured_collection_YP7agC"
+      ],
+      "settings": {
+        "title": "Collections",
+        "description": "Make a statement but keep it subtle. When shopping for long formal dresses, black gowns are ultra classy, and come in infinite designs, with a huge range of features.",
+        "heading_size": "h1",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "discount_image_7UFfBt": {
+      "type": "discount-image",
+      "settings": {
+        "image1": "shopify:\/\/shop_images\/Frame_4143_1.jpg",
+        "image2": "shopify:\/\/shop_images\/Frame_4144_1.jpg",
+        "heading1": "Trendy Collection",
+        "title1": "<p>30% OFF<\/p>",
+        "heading2": "level up your style",
+        "title2": "<p>SAVE 50%<\/p>",
+        "link": "shopify:\/\/collections\/accessories",
+        "button_label": "SHOP NOW"
+      }
+    },
+    "featured_collection_4YMWHJ": {
+      "type": "featured-collection",
+      "blocks": {
+        "collections_NBxhD9": {
+          "type": "collections",
+          "settings": {
+            "collection": "rahul-clothing"
+          }
+        },
+        "collections_TEYpH3": {
+          "type": "collections",
+          "settings": {
+            "collection": "accessories"
+          }
+        },
+        "collections_YddXXR": {
+          "type": "collections",
+          "settings": {
+            "collection": "dress"
+          }
+        }
+      },
+      "block_order": [
+        "collections_NBxhD9",
+        "collections_TEYpH3",
+        "collections_YddXXR"
+      ],
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h1",
+        "description": "",
+        "show_description": false,
+        "description_style": "uppercase",
+        "collection": "rahul-clothing",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": false,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": false,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "multicolumn_yKAnxC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_eDUW3b": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4011.png",
+            "title": "Fast delivery",
+            "text": "<p>Excepteur sint occaecat cupinon proident elsof<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_Y4brHn": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4011_1.png",
+            "title": "Secure payments",
+            "text": "<p>Neque porro quisquam est, qui dolorem porro Neque  <\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_4hXUVc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4011_2.png",
+            "title": "Replacment in 10days",
+            "text": "<p>Voluptate velit esse quam nihil mol estiae<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hfPAFQ": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Group_4011_3.png",
+            "title": "Fast delivery",
+            "text": "<p>aboris nisi ut aliquip ex ea com modo con<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_eDUW3b",
+        "column_Y4brHn",
+        "column_4hXUVc",
+        "column_hfPAFQ"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 4,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 100
+      }
+    },
+    "counter_section_qAqJNQ": {
+      "type": "counter-section",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/pexels-ambientnature-atmosphere-5948574 (2160p).mp4",
+        "product_description_video": "https:\/\/youtu.be\/h3M4bm2EveM",
+        "videoselect": "1",
+        "sale": "summer drop 40% OFF",
+        "heading1": "Make people fall in love with your cloths",
+        "title1": "<p>Step into the spotlight with our captivating collection of trend-setting fashion pieces. From statement prints to timeless classics.<\/p>",
+        "link": "#",
+        "button_label": "Button label",
+        "hours": 2,
+        "minutes": 13,
+        "seconds": 18,
+        "date": 6,
+        "month": "7",
+        "year": 2024
+      }
+    },
+    "featured_blog_9Wnjrq": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "BLOG POST",
+        "heading_size": "h1",
+        "blog": "cars-rahul",
+        "post_limit": 3,
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 100,
+        "padding_bottom": 100
+      }
+    },
+    "brands_sesction_TJtrP3": {
+      "type": "brands-sesction",
+      "blocks": {
+        "image_wMpfjk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand1.png"
+          }
+        },
+        "image_MF7VMV": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand2.png"
+          }
+        },
+        "image_XFAmMj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand3.png"
+          }
+        },
+        "image_KQcmqq": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand4.png"
+          }
+        },
+        "image_FxRxVa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwing_2brand5.png"
+          }
+        },
+        "image_EUB6rE": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/pngwingbrand6.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_wMpfjk",
+        "image_MF7VMV",
+        "image_XFAmMj",
+        "image_KQcmqq",
+        "image_FxRxVa",
+        "image_EUB6rE"
+      ],
+      "settings": {}
+    },
+    "1718629683afa91ecb": {
+      "type": "apps",
+      "blocks": {
+        "testing_star_rating_pgBPz8": {
+          "type": "shopify:\/\/apps\/testing\/blocks\/star_rating\/a1e286d0-9ec6-4d7c-bb2a-68fca3b50c6d",
+          "settings": {
+            "product": "gold-100g"
+          }
+        }
+      },
+      "block_order": [
+        "testing_star_rating_pgBPz8"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "slideshow_duplicate_yUwWfU",
+    "collection_list_Pi7WGV",
+    "discount_image_7UFfBt",
+    "featured_collection_4YMWHJ",
+    "multicolumn_yKAnxC",
+    "counter_section_qAqJNQ",
+    "featured_blog_9Wnjrq",
+    "brands_sesction_TJtrP3",
+    "1718629683afa91ecb"
+  ]
+}
